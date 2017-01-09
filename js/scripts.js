@@ -42,3 +42,24 @@ var bmiDisplay = function(){
 }
 
 bmiDisplay();
+
+// fahrenheit to celsius
+
+var fahrenToCel = function(temp) {
+  var newTemp = ((temp - 32) * 5) / 9;
+  return newTemp;
+};
+
+
+// celsius to fahrenheit
+
+var celToFahren = function(temp) {
+  var newTemp = ((temp * 9) / 5) +32;
+  return newTemp;
+};
+
+var usrFahrenTemp = celToFahren(parseInt(prompt("What is the temp in Celsius?")));
+var usrCelciusTemp = fahrenToCel(parseInt(prompt("What is the temp in Fahrenheit?")));
+
+alert(usrFahrenTemp);
+alert(usrCelciusTemp);
